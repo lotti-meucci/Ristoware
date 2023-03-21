@@ -26,6 +26,7 @@ INSERT INTO supplemento VALUES
   ("coperto", 0),
   ("asporto", 0);
 
+-- Se il costo aggiuntivo è nullo allora l'ingrediente non può fare da aggiunta.
 CREATE TABLE ingrediente
 (
   id BINARY(16) PRIMARY KEY,  -- UUID
@@ -59,7 +60,10 @@ CREATE TABLE ordine
   confermato BOOL NOT NULL,
   tavolo VARCHAR(16),
   note VARCHAR(1023),
-  orario_asporto DATETIME
+  orario_asporto DATETIME,
+  
+  -- Se il tavolo non è nullo, l'ordine è locale,
+  -- altrimenti se l'orario d'asporto non è nullo, l'ordine è online.
   CHECK (tavolo IS NULL XOR orario_asporto IS NULL)
 );
 

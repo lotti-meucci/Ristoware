@@ -48,6 +48,6 @@ Il linguaggio che si interfaccerà con il database per la manipolazione dei dati
 PHP dovrà inoltre gestire le autorizzazioni.
 
 ### Client
-PHP coopererà anche con HTML/CSS/JS per la visualizzazione tramite interfaccia utente (UI).
+PHP coopererà anche con HTML/CSS/JS per la visualizzazione tramite interfaccia utente (UI).\
 Ogni grado di autorizzazione ha una propria UI.
 L'utente che intende effettuare un'ordinazione online potrà farlo su una UI web separata.

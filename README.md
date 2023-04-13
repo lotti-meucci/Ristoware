@@ -44,6 +44,7 @@ Il DBMS che verrà utilizzato è MariaDB sul quale dovrà essere eseguito il seg
 Ogni ristorante utilizzatore di Ristoware ha una propria istanza di database.
 
 ### Server
+Il web server delle risorse statiche è Apache.\
 Il linguaggio che si interfaccerà con il database per la manipolazione dei dati è PHP.
 PHP dovrà inoltre gestire le autorizzazioni.
 
